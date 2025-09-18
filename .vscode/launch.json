@@ -1,0 +1,29 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Cortex Debug (OpenOCD/ST-Link)",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/main.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "gdbPath": "arm-none-eabi-gdb",
+            "device": "STM32F103C8Tx",
+            "svdFile": "${workspaceFolder}/STM32F103.svd", 
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "raw",
+            "searchDir": [
+                "/usr/share/openocd/scripts",
+                "/opt/openocd/share/openocd/scripts"
+            ],
+            
+        }
+    ]
+}
