@@ -51,3 +51,4 @@ Info : flash size = 32kbytes
 ** Resetting Target ** 
 shutdown command invoked
 ```
+This is the first commit of my project.
